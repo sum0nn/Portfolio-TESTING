@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portfolio - Suman Das</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <!-- Bootstrap CSS and JavaScript (use the same versions) -->
+    
+    
+    <!-- Your custom CSS and JavaScript -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    
+    <style>
+        /* Style for the custom blue color buttons */
+        .custom-blue {
+            color: #007bff; /* Blue color code */
+        }
+
+        /* Style for the custom blue color icons */
+        .custom-blue .carousel-control-prev-icon,
+        .custom-blue .carousel-control-next-icon {
+            background-color: #007bff; /* Blue color code */
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+<body>
+    
+    
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+                <span class="moon-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="50px" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                      </svg>
+                </span>
+            </div>
+            
+            
+               
+            <a class="navbar-brand" href="#">
+                <div class="neon">FolioNook </div>
+                
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a dedicated web developer with a passion for crafting clean, efficient, and user-friendly websites. I solely believe in team management and adaptabilty and when I am not immersed in code, you can find me behind the lens, capturing moments through photography, or unwinding with a discerning eye for storytelling in the world of cinema.</p>
+        </div>
+    </section>
+
+  <!-- Image Gallery Section -->
+  <section id="image-gallery" class="section">
+    <div class="container">
+      <div class="custom-carousel">
+          <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="/sunset.jpg" alt="Image 1">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="/sunset_bolevard.jpeg" alt="Image 2">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="./sea.jpg" alt="Image 3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./lightning1.JPG" alt="Image 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./lightning2.JPG" alt="Image 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="./crow.JPG" alt="Image 6">
+                </div>
+                <div class="carousel-item">
+                    <img src="./workingMan.JPG" alt="Image 7">
+                </div>
+                <div class="carousel-item">
+                    <img src="./workingMan1.JPG" alt="Image 8">
+                </div>
+                <div class="carousel-item">
+                    <img src="./stalker.png" alt="Image 9">
+                </div>
+              </div>
+          </div>
+          <!-- Custom arrow keys outside the carousel -->
+          <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+            <img src="./arrow-images/arrow-left-circle.svg" alt="leftcicle" width="40px" height="40px">
+        </a>
+        <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+            <img src="./arrow-images/arrow-right-circle.svg" alt="arrow-right-circle" width="40px" height="40px">
+        </a>
+        
+      </div>
+  </div>
+</section>
+
+
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <!-- Add your portfolio projects here -->
+            <div class="row">
+                <div class="col-lg-4">
+                    
+                    <img src="./portfolio-images/dice_game.PNG" alt="dice game" width="150" height="140" class="bd-placeholder-img rounded-circle" style="margin-bottom: 30px;">
+                            <h2 class="fw-normal" style="margin-bottom: 10px; font-size: 35px;">Simple Dice Game</h2>
+                            <p class="para1">Web-Based Interactive Dice Game: with Dark Mode Comfort. Upon each webpage reload, a player achieves victory, determined by the highest dice number rolled. In the event of a tie, the outcome is considered a draw.</p>
+                            <p><a class="btn btn-secondary one" href="https://sum0nn.github.io/Simple-Dice-Game/" target="_blank" rel="noopener">View details »</a></p>
+
+
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <img src="./portfolio-images/drum.png" alt="drum kit" width="140" height="140" class="bd-placeholder-img rounded-circle" style="margin-bottom: 30px;">
+                  <h2 class="fw-normal" style="margin-bottom: 10px; font-size: 35px;">Drum Kit</h2>
+                  <p class="para1">The Drum Kit web application offers an engaging and highly responsive user experience, 
+                    making it an enjoyable and entertaining platform for users of all backgrounds.</p>
+                    <p><a class="btn btn-secondary two" href="https://sum0nn.github.io/Drum-Kit/" target="_blank" rel="noopener">View details »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <img src="./portfolio-images/simon-game.png" alt="simon game" width="140" height="140" class="bd-placeholder-img rounded-circle" style="margin-bottom: 30px;">
+                  <h2 class="fw-normal" style="margin-bottom: 10px; font-size: 35px;">Simon Game</h2>
+                  <p class="para1" >Players are presented with a sequence of colored buttons and must replicate the sequence in the correct order to advance through the levels.</p>
+                  <p><a class="btn btn-secondary three" href="https://sum0nn.github.io/The-Simon-Game/" target="_blank" rel="noopener">View details »</a></p>
+                  <p style="margin-bottom: 60px;"></p>
+                </div><!-- /.col-lg-4 -->
+    
+                
+<div>
+    <h3 class="tool1" style="margin-bottom: 20px;">Development Tools</h2>
+    <p style="margin-bottom: 30px;">
+      <!-- Visual Studio Code, Git, Terminal images go here -->
+                      <a href="https://code.visualstudio.com/" target="_blank" rel="noopener"><img alt="Visual Studio Code" src="./portfolio-images/visual_studio_code.webp" style="max-width: 8%; margin-right: 30px;"></a>
+                      <a href="https://git-scm.com/" target="_blank" rel="noopener"><img alt="Git" src="./portfolio-images/git.gif" style="max-width: 10%; border-radius: 10px; margin-right: 30px;"></a>
+                      <a href="https://en.wikipedia.org/wiki/Windows_Terminal" target="_blank" rel="noopener"><img alt="Terminal" src="./portfolio-images/terminal.gif" style="max-width: 10%; margin-right: 30px;"></a>
+    </p>
+  </div>
+  
+  <div style="text-align: center;">
+    <!-- Web Development -->
+    <div style="display: inline-block; text-align: center;">
+    <h3 class="tool2" style="margin-bottom: 30px;">Web Development Tools</h2>
+    <p style="margin-bottom: 40px;">
+      <!-- HTML5, CSS3, Bootstrap, JavaScript, jQuery, React, Node, MongoDB images go here -->
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener" title="HTML5"><img alt="HTML5" src="./portfolio-images/html5.gif" style="max-width: 10%; margin-right: 2%;"></a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener" title="CSS3"><img alt="CSS3" src="./portfolio-images/css.gif" style="max-width: 10%; margin-right: 2%;"></a>
+      <a href="https://getbootstrap.com/" target="_blank" rel="noopener" title="Bootstrap"><img alt="Bootstrap" src="./portfolio-images/bootstrap.gif" style="max-width: 10%; margin-right: 2%;"></a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener" title="JavaScript"><img alt="JavaScript" src="./portfolio-images/javascript.gif" style="max-width: 10%; margin-right: 2%;"></a>
+      <br>
+      <a href="https://jquery.com/" target="_blank" rel="noopener" title="jQuery"><img alt="jQuery" src="./portfolio-images/jQuery.gif" style="max-width: 10%; margin-right: 2%;"></a>
+      <a href="https://react.dev/" target="_blank" rel="noopener" title="React"><img alt="React" src="./portfolio-images/react.svg" style="max-width: 9%; margin-right: 2%;"></a>
+      <a href="https://nodejs.org/en/" target="_blank" rel="noopener" title="Node.js"><img alt="Node" src="./portfolio-images/node.gif" style="max-width: 9%; margin-right: 2%;"></a>
+      <a href="https://www.mongodb.com/" target="_blank" rel="noopener" title="MongoDB"><img alt="Mongodb" src="./portfolio-images/mongodb.gif" style="max-width: 10%;"></a>
+    </p>
+  </div>
+  
+  <!-- Programming Languages -->
+  <div>
+    <h3 class="tool3" style="margin-bottom: 10px;">Programming Languages</h2>
+    <p style="margin-bottom: 40px;">
+      <!-- C, C++, Java, IntelliJ images go here -->
+      <a href="https://en.wikipedia.org/wiki/C_(programming_language)#:~:text=C%20is%20an%20imperative%20procedural,all%20with%20minimal%20runtime%20support." target="_blank" rel="noopener" title="C"><img alt="C" src="./portfolio-images/c.gif" style="max-width: 20%; margin-right: 2%;"></a>
+      <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank" rel="noopener" title="C++"><img alt="CPlusPlus" src="./portfolio-images/cplusplus.gif" style="max-width: 13%; margin-right: 2%;"></a>
+      <a href="https://www.java.com/en/" target="_blank" rel="noopener" title="Java"><img alt="Java" src="./portfolio-images/java.gif" style="max-width: 12%; margin-right: 2%;"></a>
+      <a href="https://www.jetbrains.com/idea/" target="_blank" rel="noopener" title="IntelliJ IDEA"><img alt="IntelliJ" src="./portfolio-images/intelliJave.gif" style="max-width: 9%; margin-right: 2%;"></a>
+    </p>
+  </div>
+  
+  <!-- Miscellaneous -->
+  <div>
+    <h3 class="tool4" style="margin-bottom: 30px;">Miscellaneous</h2>
+    <p style="margin-bottom: 40px;">
+      <!-- Linux, GitHub images go here -->
+      <a href="https://www.linux.org/" target="_blank" rel="noopener" title="Linux"><img alt="Linux" src="./portfolio-images/linux.gif" style="max-width: 9%; margin-right: 2%;"></a>
+      <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub"><img alt="Github" src="./portfolio-images/github.gif" style="max-width: 9%;"></a>
+    </p>
+  </div>
+  
+  
+  
+                  
+              
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out to me via email or social media.</p>
+            <p>
+                <a class="btn btn-secondary three" href="https://github.com/sum0nn" target="_blank" rel="noopener">
+                    <i class="bi bi-github"></i>
+                </a>
+              </p>
+              
+            <!-- Add social media links here -->
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

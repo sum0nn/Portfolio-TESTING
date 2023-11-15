@@ -1,0 +1,397 @@
+.navbar {
+  background-color: #3498db;
+  border-radius: 0;
+  border: none;
+  padding: 35px 0 15px 0; /* Increase the top padding by 20px */
+  transition: background-color 0.3s;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Increase the bottom margin by 20px */
+}
+
+.navbar.navbar-anim {
+  background-color: #333; /* Change to the desired background color */
+}
+
+/* Add a neon glow line below the navigation bar */
+.navbar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #3498db, #ff00ff, #3498db, #ff00ff);
+  background-size: 200% 100%;
+  border-radius: 5px;
+  animation: neonGlow 10s linear infinite;
+}
+
+@keyframes neonGlow {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.navbar-brand {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 1%;
+  color: #fef2bf;
+}
+
+.navbar-brand:hover {
+  color: #ff9800;
+}
+
+.navbar-nav {
+  margin-right: auto;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  position: relative;
+  margin-right: 20px; /* Adjust the value as needed */
+}
+
+.nav-link:hover {
+  color: #ff9800;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+/* Underline and Neon Box Animation */
+.nav-link::before,
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  bottom: 5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+.nav-link::before {
+  content: "";
+  background-color: #000;
+  opacity: 0;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.nav-link:hover::before {
+  transform: scaleX(0);
+  opacity: 0;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  background-color: #000;
+}
+
+/* Dark mode toggle button styles */
+.dark-mode-toggle {
+  position: relative;
+}
+
+.switch {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.switch .moon-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+input[type="checkbox"]:checked + .switch .moon-icon {
+  transform: translateX(20px);
+}
+
+/* Styles for the image gallery */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the width as per your design */
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+/* Custom carousel styles */
+.custom-carousel {
+  width: 800px; /* Set the desired carousel width */
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Add shadow effect to the carousel */
+  overflow: hidden;
+  border-radius: 10px; /* Rounded corners for the carousel container */
+  background-color: white; /* Background color for the carousel */
+  position: relative;
+}
+
+/* Position and style the carousel control buttons */
+/* Custom arrow key styles */
+.custom-carousel-arrows {
+  position: relative;
+}
+
+/* Custom arrow key styles */
+.custom-carousel-prev,
+.custom-carousel-next {
+  font-size: 24px;
+  background: white;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.custom-carousel-prev {
+  left: 0;
+}
+
+.custom-carousel-prev:hover,
+.custom-carousel-next:hover {
+  background: #fff; /* Change the background color to the inverted color */
+  color: white; /* Change the text color to the original color */
+}
+
+.custom-carousel-next {
+  right: 0;
+}
+
+.carousel .carousel-inner .carousel-item img {
+  width: 600px; /* Set the desired width */
+  height: 440px; /* Set the desired height */
+}
+
+/* Custom styles for sections */
+.section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 36px;
+  color: #3498db;
+  margin: 20px 0; /* Adjust the margin to control the gap */
+}
+
+.section p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Styles for the hero section */
+.hero {
+  background-image: url("background.jpg");
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.row {
+  padding: 60px 0;
+}
+
+.rounded-circle {
+  width: 160px; /* Set the desired width */
+  height: 160px; /* Set the desired height */
+  object-fit: scale-down; /* Maintain aspect ratio and cover the circle */
+  border-radius: 50%; /* Make sure it's a circle */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Add shadow around the image */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.rounded-circle:hover {
+  transform: scale(1.05);
+}
+
+.btn-secondary:hover {
+  transform: scale(1.05);
+}
+
+.col-lg-4 {
+  text-align: center; /* Center the content */
+}
+
+.image-container {
+  margin: 10px; /* Add margin around the image container */
+}
+
+.two {
+  margin: 27px;
+}
+
+.three {
+  margin: 53px;
+}
+
+.bit-github {
+  transform: scale(1.05);
+}
+
+h2 {
+  text-align: centre;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background-color: black;
+}
+
+.nav-brand {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@font-face {
+  font-family: "myThirdFont";
+  src: url(./fonts/baby\ blocks.ttf);
+}
+
+.neon {
+  font-family: "myThirdFont";
+  font-size: 4rem;
+  margin: 1%;
+  color: white;
+  font-size: 2rem;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.neon {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: transparent; /* Set background-color to transparent */
+  animation: typewriter 2s steps(40) infinite;
+}
+
+@font-face {
+  font-family: "mySecondFont";
+  src: url(./fonts/3Dventure.ttf);
+}
+
+#portfolio h2 {
+  font-family: "mySecondFont";
+  color: black;
+  font-size: 4rem;
+  margin: 1%;
+}
+
+@font-face {
+  font-family: "myFirstFont";
+  src: url(./fonts/Savior1.ttf);
+}
+
+section h3 {
+  font-family: myFirstFont;
+  color: #1f51ff;
+  font-size: 3rem;
+  margin: 1%;
+}
+
+.col-lg-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.para1 {
+  margin-top: 10px; /* Adjust the margin as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .nav-item {
+    margin: 5px 5px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .section h2 {
+    font-size: 30px;
+  }
+}
